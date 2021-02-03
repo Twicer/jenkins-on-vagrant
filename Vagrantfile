@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = 1
       end
       node.vm.provision "file", source: "resources", destination: "$HOME/resources"
-      config.vm.provision "shell", path: "provision.sh"
+      config.vm.provision "shell", path: "build.sh"
 
     end
   end
